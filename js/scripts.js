@@ -8,3 +8,8 @@ window.addEventListener('DOMContentLoaded', event => {
     const listHoursArray = document.body.querySelectorAll('.list-hours li');
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
+document.addEventListener('DOMContentLoaded', () => {
+    const visitCount = localStorage.getItem('visitCount') || 0;
+    localStorage.setItem('visitCount', parseInt(visitCount) + 1);
+    document.getElementById('visit-counter').textContent = visitCount;
+  });
