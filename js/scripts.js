@@ -9,7 +9,17 @@ window.addEventListener('DOMContentLoaded', event => {
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
 document.addEventListener('DOMContentLoaded', () => {
-    const visitCount = localStorage.getItem('visitCount') || 0;
-    localStorage.setItem('visitCount', parseInt(visitCount) + 1);
-    document.getElementById('visit-counter').textContent = visitCount;
-  });
+    let visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
+    visitCount += 1;
+    localStorage.setItem('visitCount', visitCount);
+    
+    const counterElement = document.getElementById('visit-counter');
+    if (counterElement) {
+        counterElement.textContent = visitCount;
+    }
+
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
