@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Café Marrón">
+  <rect width="32" height="32" rx="7" fill="#24150e"/>
+  <g transform="rotate(-16 16 16)">
+    <ellipse cx="16" cy="16" rx="9.1" ry="12.3" fill="#c9843a" stroke="#7a481c" stroke-width="0.6"/>
+    <path d="M16.4 7.2c1.7 3.4 1.6 7.2-.3 13.4" fill="none" stroke="#24150e" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+</svg>
